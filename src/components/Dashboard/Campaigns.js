@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Row, Col, Button, Input, Select } from 'antd';
+import {  Row, Col, Button, Input, Select } from 'antd';
 import { getCampaigns } from '../../services/campaignService';
 import CampaignCard from './CampaignCard';
 import { BarsOutlined, AppstoreOutlined } from '@ant-design/icons';
