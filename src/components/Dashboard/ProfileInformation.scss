@@ -1,0 +1,90 @@
+// ProfileInformation.scss
+.profile-info {
+    .ant-card-body {
+      padding: 8px;
+    }
+  
+    &.ant-card {
+      border: 1px solid #053559;
+      border-radius: 16px;
+    }
+  
+    .profile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #BFBFBF;
+  
+      span.underlined {
+        font-size: 20px;
+        font-weight: 500;
+        color: #053559;
+      }
+  
+      .anticon {
+        color: #0D98FE;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
+  
+    .profile-content {
+      display: flex;
+      align-items: center;
+  
+      .avatar {
+        margin-right: 12px;
+        
+        img {
+          width: 56px;
+          height: 56px;
+          border-radius: 8px;
+        }
+      }
+  
+      .info {
+        flex-grow: 1;
+  
+        .name {
+          display: block;
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 8px;
+          color: #053559;
+        }
+  
+        .progress-container {
+          display: flex;
+          align-items: center;
+          
+          .ant-progress {
+            flex-grow: 1;
+            margin-right: 8px;
+            
+            .ant-progress-inner {
+              background-color: #f0f0f0;
+            }
+  
+            .ant-progress-bg {
+              height: 6px !important;
+            }
+          }
+  
+          .percentage {
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.45);
+          }
+        }
+      }
+    }
+  
+    .description {
+      margin-top: 16px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #0D1821;
+      line-height: 1.5;
+    }
+  }

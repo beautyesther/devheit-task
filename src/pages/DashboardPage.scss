@@ -1,0 +1,100 @@
+.dashboard-content {
+    margin-left: 250px;
+    padding: 24px;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+  }
+
+  /* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 15px;
+  z-index: 1100;
+  position: relative;
+  top: 15px;
+}
+  
+  .overview-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 24px;
+  
+    .financial-overview {
+      padding: 16px 24px;
+      background-color: #053559;
+      color: white;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  
+      h2 {
+        color: white;
+      }
+    }
+  
+    .profile-info {
+      padding: 16px;
+      background-color: #fff;
+      border-radius: 16px;
+      // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      display: grid;
+    }
+    @media (min-width: 770px) and (max-width: 950px) {
+      display: grid;
+    }
+  }
+  
+  /* Default desktop styles */
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out; /* For sliding effect */
+}
+
+.layout-content {
+  margin-left: 250px;
+  padding: 24px;
+  background-color: #FAFAFA;
+}
+
+.dashboard-content {
+  margin-left: 250px;
+  padding: 24px;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 15px;
+  z-index: 1100;
+  position: relative;
+  top: 15px;
+}
+
+/* Media query for smaller screens (e.g., mobile) */
+@media screen and (max-width: 768px) {
+  .layout-content,
+  .dashboard-content {
+      margin-left: 0; 
+  }
+
+
+  .hamburger {
+      display: block;
+  }
+}

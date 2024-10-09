@@ -1,0 +1,12 @@
+$primary-color: #1890ff; // Ant Design primary color
+$bg-color: #f0f2f5;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $bg-color;
+}
+
+.ant-btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}

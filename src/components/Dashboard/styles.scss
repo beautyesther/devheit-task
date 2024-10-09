@@ -1,0 +1,258 @@
+
+.campaigns-section {
+  // padding: 24px;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+      color: #0A2540;
+      margin: 0;
+    }
+
+    .ant-input-search {
+      max-width: 450px;
+
+      .ant-input {
+        background-color: #F0F9FF;
+        border-color: #E6E6E6;
+
+        &::placeholder {
+          color: #667085;
+        }
+      }
+
+      .ant-input-group-addon {
+        background-color: #F0F9FF;
+        border-color: #E6E6E6;
+      }
+    }
+  }
+
+  .results-sort-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .search-results {
+      color: #0D1821;
+      font-size: 16px;
+      font-weight: 400;
+
+      .total-blogs {
+        color: #053559;
+        font-weight: 500;
+      }
+    }
+
+    .sort-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .sort-by-text {
+        color: #0D1821;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .ant-select {
+        width: 120px;
+        color: #0D1821;
+      }
+
+      .ant-select-selector {
+        background: #E7F5FF;
+        border: #E7F5FF;
+      }
+
+      .ant-select-arrow {
+        color: #053559;
+      }
+
+      .view-toggle {
+        display: flex;
+        gap: 4px;
+
+        .ant-btn {
+          padding: 8px;
+          height: auto;
+          
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .header-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+
+    .results-sort-container {
+      display: flex;
+      flex-direction: column;
+
+      .sort-controls {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+
+}
+
+
+// CampaignCard.scss
+.campaign-card {
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 16px;
+
+  .ant-card-body {
+    padding: 16px;
+  }
+
+  .campaign-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+
+    .title-section {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .campaign-logo {
+      width: 40px !important;
+      height: 40px !important;
+     
+    }
+
+    .title-info {
+      h3 {
+        margin: 0 0 4px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #053559;
+        ;
+      }
+
+      .company-info {
+        margin: 0;
+        color: #595959;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    .post-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .post-time {
+        color: #0D1821;
+        font-size: 10px;
+        font-weight: 400;
+      }
+
+      .bookmark-icon {
+        color: #999;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .description {
+    color: #595959;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+
+  .section {
+    margin-bottom: 8px;
+
+    h4 {
+      font-size: 14px;
+      color: #053559;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+  }
+
+  .channel-icons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+
+    .channel-icon {
+      font-size: 20px;
+      color: #053559;
+    }
+
+    .additional-channels {
+      color: #053559;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .budget-section {
+      h4 {
+        font-size: 14px;
+        color: #053559;
+        font-weight: 500;
+        margin-bottom: 4px;
+      }
+
+      .budget {
+        margin: 0;
+        font-weight: 700;
+        font-size: 20px;
+        color: #053559;
+      }
+    }
+
+    .apply-button {
+      background-color: #053559;
+      border: none;
+      height: 40px;
+      font-weight: 500;
+      font-size: 14px;
+      width: 120px;
+      color: #FFFFFF;
+      border-radius: 8px;
+    }
+  }
+}
+
+// @media (max-width: 1000px) {
+//   .ant-col {
+//     flex: 0 0 100%; 
+//     max-width: 100%; 
+//   }
+// }

@@ -1,0 +1,66 @@
+.campaign-modal {
+    .ant-modal-content {
+      border-radius: 8px;
+      
+      .ant-modal-header {
+        border-bottom: none;
+        padding: 24px 24px 0;
+        
+        .ant-modal-title {
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+      
+      .ant-modal-body {
+        padding: 24px;
+      }
+    }
+    
+    .campaign-form {
+      .form-item {
+        margin-bottom: 16px;
+        
+        label {
+          display: block;
+          margin-bottom: 8px;
+          font-weight: 500;
+          font-size: 16px;
+          color: #053559;
+        }
+        
+        .ant-input,
+        .ant-select {
+          width: 100%;
+        }
+        
+        .channel-icons {
+          display: flex;
+          gap: 8px;
+          
+          .ant-btn {
+            border-radius: 4px;
+            height: 36px;
+            padding: 0 12px;
+            
+            .anticon {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      
+      .create-button {
+        height: 40px;
+        font-weight: 500;
+        margin-top: 24px;
+        background: #053559;
+      }
+    }
+  }
+
+  .modal-title {
+    color: #053559;
+    font-size: 24px;
+    font-weight: 500;
+  }

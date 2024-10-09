@@ -1,0 +1,102 @@
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+  
+    .brand {
+      padding-inline: 10px;
+      padding-top: 25px;
+      h1 {
+        color: #053559;
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+  
+      .profile-image {
+        margin-right: 9px;
+        
+        img {
+          width: 56px;
+          height: 56px;
+          border-radius: 10px;
+        }
+      }
+  
+      .info {
+        flex-grow: 1;
+  
+        .name {
+          display: block;
+          font-size: 18px;
+          font-weight: 700;
+          color: #053559;
+          margin-bottom: 4px;
+        }
+
+        .title {
+          color: #0D1821;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+
+      .expand-icon {
+        cursor: pointer;
+      }
+    }
+  
+    .menu {
+      margin-top: 10px;
+      padding: 10px;
+    }
+  }
+  
+  .layout-content {
+    margin-left: 250px;
+    padding: 24px;
+    background-color: #FAFAFA;
+  }
+
+  .menu .ant-menu-item-selected {
+    background-color: #053559 !important;
+    color: #FFFFFF !important;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  /* Media query for smaller screens (e.g., mobile) */
+@media screen and (max-width: 768px) {
+  .sidebar {
+      transform: translateX(-250px);
+  }
+
+  .sidebar.active {
+      transform: translateX(0); 
+  }
+
+  .layout-content,
+  .dashboard-content {
+      margin-left: 0; 
+  }
+}
+
+.activateMobile {
+  position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    z-index: 1000;
+    transform: unset;
+}
